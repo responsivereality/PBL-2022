@@ -1,0 +1,61 @@
+2022-12-16 14:38:55,771 - amulet.level.load - INFO - Loading level /Users/glover-sanders.ezra/Library/Containers/com.apple.stocks/Data/~/Documents/ezzy duz hax
+2022-12-16 14:38:55,856 - OpenGL.acceleratesupport - INFO - OpenGL_accelerate module loaded
+2022-12-16 14:38:57,177 - OpenGL.arrays.arraydatatype - INFO - Using accelerated ArrayDatatype
+2022-12-16 14:40:41,042 - minecraft_model_reader.api.resource_pack.java.download_resources - INFO - Downloading java launcher manifest file.
+2022-12-16 14:40:41,117 - amulet_map_editor.programs.edit.api.canvas.base_edit_canvas - ERROR - The certificates to access the internet were not installed.
+Run the "Install Certificates.command" program that can be found in "Applications/Python 3.x".
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/urllib/request.py", line 1317, in do_open
+    encode_chunked=req.has_header('Transfer-encoding'))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1016, in _send_output
+    self.send(msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 956, in send
+    self.connect()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1392, in connect
+    server_hostname=server_hostname)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 412, in wrap_socket
+    session=session
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 853, in _create
+    self.do_handshake()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 1117, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1056)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/glover-sanders.ezra/Desktop/envy/lib/python3.7/site-packages/amulet_map_editor/programs/edit/api/canvas/base_edit_canvas.py", line 152, in thread_setup
+    yield next(gen) * 0.4 + 0.1
+  File "/Users/glover-sanders.ezra/Desktop/envy/lib/python3.7/site-packages/minecraft_model_reader/api/resource_pack/java/download_resources.py", line 101, in get_java_vanilla_latest_iter
+    _java_vanilla_latest = yield from get_latest_iter()
+  File "/Users/glover-sanders.ezra/Desktop/envy/lib/python3.7/site-packages/minecraft_model_reader/api/resource_pack/java/download_resources.py", line 65, in get_latest_iter
+    raise e
+  File "/Users/glover-sanders.ezra/Desktop/envy/lib/python3.7/site-packages/minecraft_model_reader/api/resource_pack/java/download_resources.py", line 58, in get_latest_iter
+    new_version = get_launcher_manifest()["latest"]["release"]
+  File "/Users/glover-sanders.ezra/Desktop/envy/lib/python3.7/site-packages/minecraft_model_reader/api/resource_pack/java/download_resources.py", line 27, in get_launcher_manifest
+    "https://launchermeta.mojang.com/mc/game/version_manifest.json", timeout=20
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/urllib/request.py", line 525, in open
+    response = self._open(req, data)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/urllib/request.py", line 543, in _open
+    '_open', req)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/urllib/request.py", line 503, in _call_chain
+    result = func(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/urllib/request.py", line 1360, in https_open
+    context=self._context, check_hostname=self._check_hostname)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/urllib/request.py", line 1319, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1056)>
+2022-12-16 14:40:46,013 - amulet_map_editor.api.opengl.textureatlas - INFO - Creating texture atlas
+2022-12-16 14:40:46,114 - amulet_map_editor.api.opengl.textureatlas - INFO - Trying to pack textures into image of size 4096x4096
+2022-12-16 14:40:46,114 - amulet_map_editor.api.opengl.textureatlas - INFO - Successfully packed textures into an image of size 4096x4096
+2022-12-16 14:40:46,137 - amulet_map_editor.api.opengl.textureatlas - INFO - Finished creating texture atlas
+2022-12-16 14:40:47,182 - amulet_map_editor.api.opengl.canvas.canvas - INFO - OpenGL Version 2.1 Metal - 76.3
+2022-12-16 14:40:48,143 - amulet_map_editor.api.opengl.resource_pack.resource_pack - INFO - Finished setting up texture atlas in OpenGL

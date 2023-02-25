@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>About</title>
+        <link rel="stylesheet" href="about.css">
+    </head>
+    <body>
+        <div class="banner">
+            <div class="navbar">
+                <a href="index.html" target="_blank">
+                    <img src="logo.png" class="logo">
+                </a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="clock.html">The Clock</a></li>
+                    <li><a href="disc.html">Disc Launcher</a></li>
+                    <li><a href="rocket.html">Rocket Launcher</a></li>
+                    <li><a href="chain.html">Chainmail</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="about">
+            <p>
+                <em>Project Print</em> is an initiative to excite people about 3D printing and its capabilities, especially relating to science. We hope to get more people interested and perhaps take part in the use of this amazing machine. In total, this project took almost 69 hours and 870 grams of plastic, costing us only $24 worth of filament. We hope to show how cost-efficient, yet incredible 3D printing can be, especially considering its the things that can be achieved with it.
+                <br><br>As an entry-level printer, we would recommend the Ender 3 and its variants, the main of which can be found <a href="https://www.creality3dofficial.com/products/ender-3-v2-3d-printer">here</a>. All of them are priced roughly at $350 including shipping. I (Dylan) personally use the Prusa i3 MK3s+ which costs around $1500 with the kit or $1800 preassembled. This is considering international shipping and importing fees.
+                <br><br>To tie our project together, I (Ezra) decided to fully develop, code and host a website on the Internet, in fact this website that you are reading from right now. Although it was an arduous task, I felt that some sort of showcase was needed for this cool project, so this was our decision. I utilised the coding languages HTML, CSS and JavaScript to create an incredibly interactive website for everybody to see. Please enjoy Ezra and Dylan's PBL 2022 Project.
+            </p>
+        </div>
+
+        <div style="text-align:center" class="video-one"> 
+            <button onclick="playPause()">Play/Pause</button> 
+            <button onclick="makeBig()">Big</button>
+            <button onclick="makeSmall()">Small</button>
+            <button onclick="makeNormal()">Normal</button>
+            <br><br>
+            <video id="video-one" width="420">
+                <source src="about1.mp4" type="video/mp4">
+            </video>
+        </div> 
+            
+        <script> 
+            var myVideo = document.getElementById("video-one"); 
+            
+            function playPause() { 
+                if (myVideo.paused) 
+                    myVideo.play(); 
+                else 
+                    myVideo.pause(); 
+            } 
+            function makeBig() { 
+                myVideo.width = 560; 
+            } 
+            function makeSmall() { 
+                myVideo.width = 320; 
+            } 
+            function makeNormal() { 
+                myVideo.width = 420; 
+            } 
+        </script>
+
+        
+        
+        <img src="about2.jpg" class="two">
+        
+
+        <div class="three">
+            <img src="about3.jpg" class="three">
+        </div>
+
+    </body>
+</html>
